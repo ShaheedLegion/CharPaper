@@ -11,6 +11,8 @@ import inspirational.designs.charpaper.CharPaperService.CharPaperEngine;
  * Stores terrain block images and exposes methods to access them. Also contains code to render the images.
  * By making small changes to the behavior of this class, we can achieve interesting effects on the "surface"
  * of terrain that this class manages.
+ * 
+ * UPDATE (2015/06/09) - Adding randomness by implmenting a way to get the top of the terrain at a specific position.
  * */
 
 public class TerrainRenderer
@@ -107,7 +109,7 @@ public class TerrainRenderer
 		return _block_width;
 	}
 	
-	public int getTerrainTop()
+	public int getTerrainTop(int x)
 	{
 		return _terrain_top;
 	}
